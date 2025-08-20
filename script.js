@@ -21,9 +21,24 @@ resetBtn.onclick = function() {
 decreaseBtn.onclick = function () {
   count--; 
   countLable.textContent = count;
+
+  if(count < 0){
+    sountLabel.textContent = `Your age can't be less than 0 :)`
+  }
 }
 
 submitBtn.onclick = function () {
-  document.getElementById("result").textContent = `You are ${count} years old`;
+  countLable.value;
+  
+  if(count < 0){
+    countLable.textContent = `Your age can't be less than 0 :)`;
+  }
+
+  else {
+    countLable.textContent = `You are ${count} years old`;
+
+  }
+
+  // document.getElementById("result").textContent = `You are ${count} years old`;
 
 }
